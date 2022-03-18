@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Log In</title>
+    <link rel=" icon" href=favicon-32x32.png>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="bg">
+    <section style="background-color:#fc1c1c">&nbsp<!--Espacio en blanco para que pueda establecerse el fondo de la sección-->
+
+        <img src="https://www.bargas.es/wp-content/uploads/2016/06/800px-banco_santander_logotipo_2007-2018.svg_-500x159.png"> <!--Insercion de imagen-->
+        <br>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="index.html"><button type="button" style="background-color:#fc1c1c;color:white;border:2px solid white">Página principal</button></a>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="curiosidades.html"><button type="button" style="background-color:#fc1c1c;color:white;border:2px solid white">Nuestros Patrocinios</button></a></li>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="https://es.investing.com/equities/banco-santander"><button type="button" style="background-color:#fc1c1c;color:white;border:2px solid white">Bolsa en tiempo real</button></a></li>
+
+        <br>
+    </section>
+        <h1>Inicio de sesión</h1>
+        <p>
+            Rellene los siguientes apartados :
+            <form action="/signup" method="post">
+                <ul>
+                    <li><label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre">
+                    </li>
+                    <li>
+                        <label for="correo">Correo electrónico:</label>
+                        <input type="text" id="correo" name="correo">
+                    </li>
+                    <li>
+                        <label for="password">Password</label>
+                        <input type="text" id="password" name="password">
+                    </li>
+                    <br>
+                    <input type="button" value="Enviar" onclick="getFormLog()">
+                    <input type="button" value="Ver Datos" onclick="seeFilledClient()">
+                </ul>
+
+
+            </form>
+        </p>
+        <div id="results">
+
+        </div>
+</div>
+    <script src="login.js"></script>
+</body>
+</html>
